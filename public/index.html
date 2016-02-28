@@ -11,108 +11,49 @@
         <title>Wright Remodeling</title>
 
         <!-- Bootstrap core CSS -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>  -->
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../css/main.css"/>
         <link rel="stylesheet" href="../css/onepage-scroll.css"/>
 
         <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
-
-         
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="../scripts/jquery.onepage-scroll.js"></script>
-         
-        <script type="text/javascript">
-         $(".main").onepage_scroll({
-             sectionContainer:"section",
-             easing: "ease",
-             animationTime: 1000,
-             pagination: true,
-             updateURL: false,
-             beforeMove: function(index) {},
-             afterMove: function(index) {},
-             loop: false,
-             keyboard: true,
-             responsiveFallback: false,
-             direction: "vertical"
-         });
-        </script>
-
+        <style type="text/css">
+         .full-image {
+             min-height:100%;
+             min-width:100%;
+             height:auto;
+             width:auto;
+             position:absolute;
+             top:-100%; bottom:-100%;
+             left:-100%; right:-100%;
+             margin:auto;
+         }
+         .tint {
+             float:left;
+             content:"";
+             display:block;
+             background: rgba(255,255,255, 0.5);
+         }
+         #title {
+             font-size:48pt;
+             color:white;
+             -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+             -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+             box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+         }
+        </style>
     </head>
     <!-- NAVBAR
          ================================================== -->
     <body>
         <div class="main">
-
-            <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-            <!-- <div class="navbar-wrapper">                                                                                                                                         -->
-            <!--     <div class="container">                                                                                                                                          -->
-            <!--                                                                                                                                                                      -->
-            <!--         <nav class="navbar navbar-static-top">                                                                                                                       -->
-            <!--             <div class="container">                                                                                                                                  -->
-            <!--                 <div class="navbar-header">                                                                                                                          -->
-            <!--                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> -->
-            <!--                         <span class="sr-only">Toggle navigation</span>                                                                                               -->
-            <!--                         <span class="icon-bar"></span>                                                                                                               -->
-            <!--                         <span class="icon-bar"></span>                                                                                                               -->
-            <!--                         <span class="icon-bar"></span>                                                                                                               -->
-            <!--                     </button>                                                                                                                                        -->
-            <!--                     <\!-----------------------------------------------------------\->                                                                                -->
-            <!--                     <\!-- <a class="navbar-brand" href="#">Wright Remodeling</a> -\->                                                                                -->
-            <!--                     <\!-----------------------------------------------------------\->                                                                                -->
-            <!--                     <img src="logo.png" width="300" height="300"/>                                                                                                   -->
-            <!--                 </div>                                                                                                                                               -->
-            <!--             </div>                                                                                                                                                   -->
-            <!--         </nav>                                                                                                                                                       -->
-            <!--                                                                                                                                                                      -->
-            <!--     </div>                                                                                                                                                           -->
-            <!-- </div>                                                                                                                                                               -->
-            <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
             <section>
-                <!-- Carousel
-                     ================================================== -->
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img class="first-slide" src="../img/16683_929161710442729_8591592778734132173_n.jpg" alt="First slide">
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <p>Finished shower!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="second-slide" src="../img/10527374_921470481211852_2834138753711169872_n.jpg" alt="Second slide">
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <p>Ready for some porcelain!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img class="third-slide" src="../img/10609686_936912333001000_3223940767199405002_n.jpg" alt="Third slide">
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <p>Beautiful Sink</p>
-                                </div>
-                            </div>
-                        </div>
+                <div id="first_section">
+                    <div class="tint"><img class="full-image" src="../img/1507606_1298583230167240_4875237738000918752_n.jpg"/></div>
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1 id="title" style="margin-top:100px">Wright Remodeling</h1>
                     </div>
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div><!-- /.carousel -->
             </section>
             
@@ -184,20 +125,22 @@
                 </div>
 
                 <hr class="featurette-divider">
+                <!-- FOOTER -->
+                <footer>
+                    <p class="pull-right"><a href="#">Back to top</a></p>
+                    <p>&copy; 2015 Wrights Remodeling, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                </footer>
             </section>
             <!-- /END THE FEATURETTES -->
-
-
-            <!-- FOOTER -->
-            <footer>
-                <p class="pull-right"><a href="#">Back to top</a></p>
-                <p>&copy; 2015 Wrights Remodeling, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-            </footer>
 
             <!-- Bootstrap core JavaScript
                  ================================================== -->
             <!-- Placed at the end of the document so the pages load faster -->
         </div>
+        <script type="text/javascript"> 
+         $(".main").onepage_scroll(); 
+        </script> 
+
     </body>
 </html>
 
