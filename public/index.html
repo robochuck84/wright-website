@@ -20,27 +20,39 @@
         <script src="../scripts/jquery.onepage-scroll.js"></script>
         <style type="text/css">
          .full-image {
-             min-height:100%;
-             min-width:100%;
-             height:auto;
-             width:auto;
+             height:100%;
+             width:100%;
              position:absolute;
              top:-100%; bottom:-100%;
              left:-100%; right:-100%;
              margin:auto;
+             z-index:-1;
          }
          .tint {
-             float:left;
-             content:"";
-             display:block;
-             background: rgba(255,255,255, 0.5);
+             height:100%;
+             width:100%;
+             position:absolute;
+             top:-100%; bottom:-100%;
+             left:-100%; right:-100%;
+             margin:auto;
+             background: rgba(83,84,84,0.5);
          }
-         #title {
-             font-size:48pt;
+         #title_block {
+             position:absolute;
+             top:0;
+             bottom:0;
+             left:0;
+             right:0;
+             margin:auto;
+             display: -webkit-flex;
+             display:flex;
+             align-items:center;
+             text-align:center;
+         }
+         #title_block h1 {
+             font-size:56pt;
              color:white;
-             -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-             -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-             box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+             text-shadow: 4px 4px 4px #000000;
          }
         </style>
     </head>
@@ -49,12 +61,11 @@
     <body>
         <div class="main">
             <section>
-                <div id="first_section">
-                    <div class="tint"><img class="full-image" src="../img/1507606_1298583230167240_4875237738000918752_n.jpg"/></div>
-                    <div class="col-md-6 col-md-offset-3 text-center">
-                        <h1 id="title" style="margin-top:100px">Wright Remodeling</h1>
-                    </div>
-                </div><!-- /.carousel -->
+                <div class="tint"></div>
+                <img class="full-image" src="../img/1507606_1298583230167240_4875237738000918752_n.jpg"/>
+                <div id="title_block">
+                    <h1 class="col-md-6 col-md-offset-3">Wright Remodeling</h1>
+                </div>
             </section>
             
             <!-- Marketing messaging and featurettes
